@@ -1,6 +1,11 @@
 const Test = require('./iteration');
 
 const args = process.argv.slice(2);
+
+if (!args.length) {
+  throw Error('No args found');
+}
+
 const input = args[0].split('').map(v => parseInt(v, 10));
 let nbIteration = parseInt(args[1], 10);
 

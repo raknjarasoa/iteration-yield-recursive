@@ -1,5 +1,5 @@
-launch app:
-node index.js 01101 5
+#launch simple demo:
+yarn dev 01101 3
 
-test:
-yarn  mocha tests/
+#test:
+yarn test
